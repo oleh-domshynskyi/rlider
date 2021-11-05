@@ -45,6 +45,7 @@
     color: palette(color-grey);
     margin-bottom: 15px;
     @include font-family(secondary);
+    min-height: 48px;
 }
 
 .c-news-card__info-description {
