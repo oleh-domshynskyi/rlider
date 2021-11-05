@@ -1,0 +1,55 @@
+.c-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 120px;
+    min-height: 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 12px 17px;
+
+    @include mq($md) {
+        min-width: 140px;
+    }
+
+    @include mq($lg) {
+        min-width: 160px;
+    }
+}
+
+.c-button--primary {
+    background-color: palette(secondary);
+    color: palette(color-grey);
+
+    &:hover {
+        background-color: palette(secondary, 400) !important;
+        color: palette(color-grey) !important;
+    }
+
+    &:active {
+        background-color: palette(secondary, 300) !important;
+        color: palette(color-grey) !important;
+    }
+}
+
+.c-button--secondary {
+    background-color: palette(primary);
+    color: palette(color-white);
+
+    &:hover {
+        background-color: palette(primary, 400) !important;
+        color: palette(color-white) !important;
+    }
+
+    &:active {
+        background-color: palette(primary, 300) !important;
+        color: palette(color-white) !important;
+    }
+    
+}

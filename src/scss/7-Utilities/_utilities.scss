@@ -1,0 +1,43 @@
+.u-line-decoration {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+.u-line-decoration--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.u-line-decoration--primary {
+    background-color: palette(primary);
+}
+
+.u-line-decoration--secondary {
+    background-color: palette(color-title);
+}
+
+.u-bg-decoration {
+    display: none;
+    background-color: rgba(palette(color-grey, 300), 0.6);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: calc(50% - 100px);
+
+    @include mq($xl) {
+        display: block;
+    }
+}
+
+.u-arrow {
+    display: none;
+
+    @include mq($xl) {
+        display: block;
+    }
+    img {
+        margin-left: auto;
+    }
+}

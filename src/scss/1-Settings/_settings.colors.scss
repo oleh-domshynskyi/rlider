@@ -1,0 +1,63 @@
+/**
+ *  Global color variables.
+ *	The underscore Never use them directly in the styles, only for functions and mixins.
+ */
+ $_color-primary-500: #6CA6C1;
+ $_color-primary-400: #337391;
+ $_color-primary-300:  #66b1d5;
+
+ $_color-secondary-500: #FFE66D;
+ $_color-secondary-400: #ffd300;
+ $_color-secondary-300: #ffe35e;
+
+ $_color-grey-600: #5B6277;
+ $_color-grey-500: #3F3F3F;
+ $_color-grey-400: #7281A4;
+ $_color-grey-300: #3A4661;
+
+ $_color-title-500: #2B2B2B;
+
+ $_color-text-500: #7281A4;
+ 
+ $_color-white-500: #ffffff;
+ $_color-white-400: #F5F8F9;
+
+ $_color-red-500: #FF0000;
+
+
+/**
+ *  Organize color variables in a Sass Map.
+ *  This way, the colors can be iterated, are more organized, and are more intuitive to reference.
+ */
+$palettes: (
+        'primary': (
+                base: $_color-primary-500,
+                400: $_color-primary-400,
+                300: $_color-primary-300,
+        ),
+        'secondary': (
+                base: $_color-secondary-500,
+                400: $_color-secondary-400,
+                300: $_color-secondary-300,
+        ),
+        'color-grey': (
+                600: $_color-grey-600,
+                base: $_color-grey-500,
+                400: $_color-grey-400,
+                300: $_color-grey-300,
+        ),
+        'color-title': (
+                base: $_color-title-500,
+        ),
+        'text': (
+                base: $_color-text-500, 
+        ),
+        'color-white': (
+                base: $_color-white-500,
+                400: $_color-white-400,
+        ),
+        'color-red': (
+                base: $_color-red-500,
+        ),
+);
+

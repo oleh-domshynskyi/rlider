@@ -1,0 +1,55 @@
+.c-advantage-card {
+    padding: 20px 15px 30px;
+    background-color: palette(color-white, 400);
+    height: 100%;
+
+    @include mq($md) {
+        padding: 30px 20px 40px;
+    }
+
+    @include mq($xl) {
+        padding: 40px 20px 50px;
+    }
+
+    @include mq($xl) {
+        padding: 55px 30px 60px;
+    }
+}
+
+.c-advantage-card__img {
+    margin-bottom: 24px;
+
+    @include mq($lg) {
+        margin-bottom: 32px;
+    }
+    
+    img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.c-advantage-card__title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: palette(color-grey);
+    margin-bottom: 15px;
+    min-height: 40px;
+    @include font-family(secondary);
+
+    @include mq($md) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        min-height: 48px;
+    }
+}
+
+.c-advantage__description {
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: palette(color-grey);
+}

@@ -1,0 +1,83 @@
+.s-banner {
+    position: relative;
+    background-image: url(../../img/global/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+
+    @include mq($md) {
+        padding-bottom: 80px;
+    }
+
+    @include mq($lg) {
+        padding-bottom: 100px;
+    }
+
+    @include mq($xl) {
+        padding-bottom: 140px;
+    }
+}
+
+.s-banner__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(palette(color-title), 0.4);
+}
+
+.s-banner__title {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 900;
+    color: palette(color-white);
+    margin-bottom: 12px;
+    text-align: center;
+    @include font-family(secondary);
+
+    @include mq($md) {
+        font-size: 34px;
+        line-height: 48px;
+        margin-bottom: 19px;
+    }
+
+    @include mq($lg) {
+        font-size: 40px;
+        line-height: 56px;
+        margin-bottom: 26px;
+    }
+
+    @include mq($xl) {
+        margin-bottom: 31px;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: left;
+    }
+}
+
+.s-banner__subtitle {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: palette(color-white);
+    text-align: center;
+    margin: 0 auto 20px;
+
+    @include mq($md) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @include mq($lg) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    @include mq($xl) {
+        text-align: left;
+        margin: 0;
+    }
+}

@@ -1,0 +1,35 @@
+/** =====================================================================================
+ *  Defines the typographic baseline.
+ *  We define every size in pixels, the underlying system converts the
+ *  respective units to the responsive REM value.
+ ===================================================================================== */
+
+/**
+ * Our base font-size and line-height
+ */
+$base-font-size: 22 !default;
+$base-line-height: 26 !default;
+$line-height-ratio: $base-line-height/$base-font-size !default;
+
+$font-sizes: (
+        sm: 14,
+        md-sm: 20,
+        base: $base-font-size,
+        md: 28,
+        xs-lg: 36,
+        lg: 55,
+        xl: 72,
+
+);
+
+/**
+ *	Here we assign short names for the font families
+ */
+$font-title: 'Playfair Display';
+$font-base: open-sans;
+
+$font-families: (
+        base: $font-base,
+        secondary: $font-title,
+);
+

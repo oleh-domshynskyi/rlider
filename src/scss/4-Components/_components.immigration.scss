@@ -1,0 +1,131 @@
+.c-immigration {
+    max-width: 478px;
+    margin: 0 auto;
+
+    @include mq($xl) {
+        margin: 0;
+    }
+}
+
+.c-immigration__title {
+    margin-bottom: 20px;
+    color: palette(color-title);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    @include font-family(secondary);
+
+    @include mq($md) {
+        margin-bottom: 30px;
+        font-size: 26px;
+        line-height:34px;
+    }
+
+    @include mq($lg) {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    @include mq($xl) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 48px;
+        
+    }
+}
+
+.c-immigration-card__wrap {
+    margin-bottom: 30px;
+
+    @include mq($md) {
+        margin-bottom: 40px;
+    }
+
+    @include mq($xl) {
+        margin-bottom: 0;
+    }
+}
+
+.c-immigration-card {
+    border-left: 4px solid palette(primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 17px;
+    margin-bottom: 20px;
+
+    @include mq($md) {
+        margin-bottom: 30px;
+    }
+
+    @include mq($lg) {
+        margin-bottom: 40px;
+    }
+
+    @include mq($xl) {
+        margin-bottom: 51px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-immigration-card__info {
+    margin-right: 20px;
+
+    @include mq($md) {
+        margin-right: 30px;
+    }
+
+    @include mq($lg) {
+        margin-right: 42px;
+    }
+}
+
+.c-immigration-card__term {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+
+.c-immigration-card__country {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: palette(color-grey);
+    margin-bottom: 3px;
+    @include font-family(secondary);
+
+    @include mq($md) {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    @include mq($lg) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.c-immigration-card__price {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: palette(color-grey, 400);
+    margin-bottom: 0;
+
+    @include mq($md) {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+.c-immigration-card__price-country {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+}

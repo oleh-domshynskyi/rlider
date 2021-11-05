@@ -1,0 +1,38 @@
+.c-contact {
+    border: 3px solid palette(color-white);
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.c-contact__title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 22px 18px;
+    background-color: rgba(palette(color-white), 0.4);
+
+    @include mq($md) {
+        padding: 27px 24px;
+    }
+}
+
+.c-contact__title {
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: palette(color-white);
+    text-transform: uppercase;
+
+    @include mq($md) {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    @include mq($lg) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

@@ -1,0 +1,39 @@
+.s-about {
+    padding: 30px 0;
+
+    @include mq($md) {
+        padding: 50px 0;
+    }
+
+    @include mq($lg) {
+        padding: 70px 0;
+    }
+
+    @include mq($xl) {
+        padding: 100px 0;
+    }
+}
+
+.s-about__img {
+    height: 100%;
+    padding-bottom: 20px;
+
+    @include mq($md) {
+        padding-bottom: 40px;
+    }
+
+    @include mq($xl) {
+        padding-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+
+        @include mq($xl) {
+            max-width: 100%;
+        }
+    }
+}
